@@ -12,13 +12,14 @@ Teste não funcional realizado com as ferramentas NodeJs e Newman utilizando Jav
 
 Testes UI
 **Contexto: Simulador investimento**
-DADO que acesso a url “https://www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca”
+-DADO que acesso a url “https://www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca”
 Cenário: Deve validar campos existentes na aplicação
-ENTAO o sistema exibe simulador de investimento com campos conforme a “documentacao”
+-ENTAO o sistema exibe simulador de investimento com campos conforme a “documentacao”
+
 Cenário: Deve validar campos obrigatórios
-E seleciono simular
-ENTAO o sistema impede a simulacao
-E critica o preenchimento dos campos
+-E seleciono simular
+-ENTAO o sistema impede a simulacao
+-E critica o preenchimento dos campos
 Cenário: Deve realizar simulacao para o perfil Para Voce em Meses
 QUANDO seleciono o perfil Para Voce
 E informo o valor a aplicar “R$5.000,00”
