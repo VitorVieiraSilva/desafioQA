@@ -1,4 +1,4 @@
-#Desafio QA
+# Desafio QA
 
 Técnicas de teste escolhidas:
 Teste funcional para validar a funcionalidade da aplicação, analisando os resultados
@@ -12,6 +12,7 @@ Teste não funcional realizado com as ferramentas NodeJs e Newman utilizando Jav
 “foi realizado requisição para simular o investimento diretamente na api, 100 execuções em paralelo, sem falhas”
 
 Testes UI
+
 **Contexto: Simulador investimento**
 DADO que acesso a url “https://www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca”
 Cenário: Deve validar campos existentes na aplicação
