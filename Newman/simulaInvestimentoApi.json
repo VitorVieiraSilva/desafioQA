@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "0cf8a2a1-3775-402f-87ca-e77c101615e8",
+		"name": "DesafioQASimularNaAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Simular Investimento",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Código de STATUS da resposta 200 (OK) ou 201 (Novo registro criado)',() => {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201]);\r",
+							"    //if (pm.response.code === 200) pm.response.to.have.status(200)\r",
+							"    //if (pm.response.code === 201) pm.response.to.have.status(201)  \r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "perfil",
+							"value": "paraVoce",
+							"type": "text"
+						},
+						{
+							"key": "valorAplicar",
+							"value": "5.000,00",
+							"type": "text"
+						},
+						{
+							"key": "valorInvestir",
+							"value": "300,00",
+							"type": "text"
+						},
+						{
+							"key": "tempo",
+							"value": "48",
+							"type": "text"
+						},
+						{
+							"key": "periodo",
+							"value": "M",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "html"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.sicredi.com.br/acao/simulador_investimento_poupanca/simular",
+					"protocol": "https",
+					"host": [
+						"www",
+						"sicredi",
+						"com",
+						"br"
+					],
+					"path": [
+						"acao",
+						"simulador_investimento_poupanca",
+						"simular"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
